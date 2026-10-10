@@ -35,12 +35,12 @@ void main() {
             if (!achouNoCache) {
                 boolean achouNoBanco = false;
 
-                // 2) procura no banco
+
                 for (Pessoa p : banco) {
                     if (p.getId() == id) {
                         achouNoBanco = true;
 
-                        // cache cheio: remove a mais antiga
+
                         if (quantidadeCache == limite) {
                             cache.remove(0);
                             quantidadeCache--;
